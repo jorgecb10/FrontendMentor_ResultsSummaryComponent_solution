@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* div principal */
+.principal {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.principal p {
+    color: hsl(241, 100%, 89%);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.titulo {
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+.texto {
+    margin: .5rem 3rem 3rem;
+    font-weight: 500;
+}
+
+.circulo {
+    margin: 0 auto;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%; /* Hace que sea circular */
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circulo h1 {
+    margin: 0;
+    padding-top: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.circulo p {
+    margin: 0;
+    padding-top: .5rem;
+    color: hsl(241, 100%, 89%);
+}
+
+
+/* div contenido */
+.contenido {
+    width: 100%;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.contenido h3 {
+    text-align: left;
+}
+
+.contenido p {
+    margin: 0;
+}
+
+.cuadros {
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    height: 5rem;
+}
+
+.reaction {
+    background-color: #ffecec;
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: #fff9e6;
+    color: hsl(39, 100%, 56%);
+}
+
+
+.verbal {
+    background-color: #e6f7ff;
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: #f0f0ff;
+    color: hsl(234, 85%, 45%);
+}
+
+.stitulo {
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.puntaje {
+    font-weight: 700;
+    color: hsl(0, 0%, 69%);
+}
+
+.puntaje span {
+    color: #000;
+}
+
+.boton {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: hsl(225, 31%, 23%);
+}
+
+.icono {
+    margin-right: .5rem;
+}
+
+@media (min-width: 576px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contenedor {
+        display: flex;
+        max-width: 80rem;
+        height: 50rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: white;
+        border-radius: 3rem;
+    }
+
+    .principal {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        padding: 30px;
+        text-align: center;
+        color: white;
+        flex: 1;
+        border-radius: 3rem;
+    }
+
+    .principal .titulo {
+        font-size: 18px;
+        margin-bottom: 4rem;
+    }
+
+    .principal .circulo {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .circulo h1 {
+        padding-top: 3rem;
+    }
+
+    .circulo h1 {
+        font-size: 8rem;
+    }
+
+    .circulo p {
+        padding-top: 0;
+    }
+
+    .contenido {
+        padding: 3rem;
+        flex: 1;
+    }
+
+    .principal h2 {
+        margin: 3rem 0 1rem;
+    }
+
+    .principal .texto {
+        margin: 0 4rem;
+    }
+
+    .boton {
+        margin-top: 3rem;
+    }
+}
